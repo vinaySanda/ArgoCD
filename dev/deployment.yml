@@ -4,15 +4,16 @@ metdata:
   name: myapp-deployment
 spec:
   selector:
-    app: myapp
-   replicas: 2
-   template
-     metadata:
-       labels:
-         app: myapp
-     spec:
-       containers:
-       - name: myapp
-         image: xyramsoftware/argotest:1.0
-         ports:
-         - containerPort: 8080
+    matchLabels:
+      app: myapp
+  replicas: 2
+  template
+    metadata:
+      labels:
+        app: myapp
+    spec:
+      containers:
+      - name: myapp
+        image: xyramsoftware/argotest:1.0
+        ports:
+        - containerPort: 8080
