@@ -1,6 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
-metdata:
+metadata:
   name: myapp-deployment
 spec:
   selector:
