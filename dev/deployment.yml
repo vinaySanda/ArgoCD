@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: myapp
-        image: xyramsoftware/argotest:1.0
+        image: 498769975733.dkr.ecr.us-east-1.amazonaws.com/arcadia.io/arcadia-fhir-api:20220422-22e824a
         ports:
         - containerPort: 8081
