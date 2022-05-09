@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
   name: myapp-deployment
 spec:
+  nodeSelector:
+        eks.amazonaws.com/nodegroup: web-nodegroup-tgw
   selector:
     matchLabels:
       app: myapp
