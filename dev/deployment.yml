@@ -16,4 +16,4 @@ spec:
       - name: myapp
         image: 498769975733.dkr.ecr.us-east-1.amazonaws.com/arcadia.io/arcadia-fhir-api
         ports:
-        - containerPort: 8080
+        - containerPort: 8081
